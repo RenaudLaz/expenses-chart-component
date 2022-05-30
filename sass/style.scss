@@ -2,13 +2,125 @@
 @import "../sass/reset.scss";
 @import "../sass/variables.scss";
 
+body{
+    background-color: $Cream;
+    font-family: 'DM Sans', sans-serif;
+}
 #resume{
-    width: 50%;
-    height: 500px;
+    width: 270px;
+    height: auto;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     .total{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: $Softred;
+        border-radius: 10px;
         color: $Verypaleorange;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        height: 62px;
+        .totalPrice{
+            margin: 15px 0 10px 17px;
+            h2{
+                font-size: 0.6em;
+            }
+            p{
+                font-weight: 700;
+            }
+        }
+        img{
+            margin: 20px;
+            width: 35px;
+        }
+    }
+    .week{
+        display: flex;
+        flex-direction: column;
+        height: 260px;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        .days{
+            position: relative;
+            top: 20px;
+            height: 120px;
+            font-size: 10px;
+            margin: 0 10px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            align-items:baseline;
+            span{
+                :hover{
+                    cursor: pointer;
+                    background-color: $Cyan;
+                }
+                p{
+                    width: 25px;
+                    border-radius: 5px;
+                    background-color: $Softred;  
+                }
+                
+                .blocMon{
+                    height: 20px;
+                }
+                .blocTue{
+                    height: 50px;
+                }
+                .blocWed{
+                    height: 80px;
+                }
+                .blocThu{
+                    height: 40px;
+                }
+                .blocFri{
+                    height: 35px;
+                }
+                .blocSat{
+                    height: 70px;
+                }
+                .blocSun{
+                    height: 40px;
+                }
+            }
+            
+        }
+        .line{
+            border-bottom: 1px solid $Darkbrown;
+            height: 130px;
+            margin: 0 20px;
+          }
+        h3{
+            margin: 15px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .month{
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            .thisMonth{
+                width: 50%;
+                &Text{
+                    font-size: 9px;
+                }
+                &Price{
+                    font-size: 25px;
+                }
+            }
+            .lastMonth{
+                width: 50%;
+                text-align: right;
+                &Text{
+                    font-size: 9px;
+                }
+                &Price{
+                    font-size: 9px;
+                }
+            }
+        }
     }
 }

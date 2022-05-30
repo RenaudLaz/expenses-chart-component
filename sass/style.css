@@ -20,12 +20,57 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+body {
+  background-color: #f8e9dd;
+  font-family: 'DM Sans', sans-serif;
+}
+
 #resume {
-  width: 50%;
-  height: 500px;
+  width: 270px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #resume .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ec775f;
+  border-radius: 10px;
+  color: #fffaf5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  height: 62px;
+}
+
+#resume .total .totalPrice {
+  margin: 15px 0 10px 17px;
+}
+
+#resume .total .totalPrice h2 {
+  font-size: 0.6em;
+}
+
+#resume .total .totalPrice p {
+  font-weight: 700;
+}
+
+#resume .total img {
+  margin: 20px;
+  width: 35px;
+}
+
+#resume .week {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +78,113 @@ time, mark, audio, video {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 260px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#resume .week .days {
+  position: relative;
+  top: 20px;
+  height: 120px;
+  font-size: 10px;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#resume .week .days span :hover {
+  cursor: pointer;
+  background-color: #76b5bc;
+}
+
+#resume .week .days span p {
+  width: 25px;
+  border-radius: 5px;
   background-color: #ec775f;
-  color: #fffaf5;
+}
+
+#resume .week .days span .blocMon {
+  height: 20px;
+}
+
+#resume .week .days span .blocTue {
+  height: 50px;
+}
+
+#resume .week .days span .blocWed {
+  height: 80px;
+}
+
+#resume .week .days span .blocThu {
+  height: 40px;
+}
+
+#resume .week .days span .blocFri {
+  height: 35px;
+}
+
+#resume .week .days span .blocSat {
+  height: 70px;
+}
+
+#resume .week .days span .blocSun {
+  height: 40px;
+}
+
+#resume .week .line {
+  border-bottom: 1px solid #382314;
+  height: 130px;
+  margin: 0 20px;
+}
+
+#resume .week h3 {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#resume .week .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px;
+}
+
+#resume .week .month .thisMonth {
+  width: 50%;
+}
+
+#resume .week .month .thisMonthText {
+  font-size: 9px;
+}
+
+#resume .week .month .thisMonthPrice {
+  font-size: 25px;
+}
+
+#resume .week .month .lastMonth {
+  width: 50%;
+  text-align: right;
+}
+
+#resume .week .month .lastMonthText {
+  font-size: 9px;
+}
+
+#resume .week .month .lastMonthPrice {
+  font-size: 9px;
 }
 /*# sourceMappingURL=style.css.map */
